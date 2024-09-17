@@ -14,7 +14,7 @@ const appRouter = router({
     }),
   userCreated: publicProcedure
     .input(z.object({ name: z.string() }))
-    .query(async ({ input: { name } }) => {
+    .mutation(async ({ input: { name } }) => {
       const user = await db.user.create({ name });
       return user;
     }),
