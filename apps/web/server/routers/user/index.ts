@@ -1,6 +1,6 @@
 import { z } from "zod";
-import db from "../db";
-import { publicProcedure } from "../trpc";
+import db from "../../db";
+import { publicProcedure } from "../../trpc";
 
 const UserRouter = {
   userList: publicProcedure.query(async () => {

@@ -1,4 +1,4 @@
-import { router } from "./trpc";
+import { router } from "../trpc";
 import UserRouter from "./user";
 
 const appRouter = router({
